@@ -3,14 +3,14 @@ const path = require("path");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
 
-const app = express();
-console.log("created an express app");
-
-const router = require("./src/globalRouting");
+const { router } = require("./src/globalRouting");
 
 var port = process.env.PORT || 3000;
 
-// app.use(logger("dev"));
+const app = express();
+console.log("created an express app");
+
+app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
