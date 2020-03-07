@@ -14,11 +14,11 @@ app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get("/", function(req, res) {
-  res.send({
-    Output: "Welcome to Markets-Boats. The server is up and running!"
-  });
-});
+// app.get("/", function(req, res) {
+//   res.send({
+//     Output: "Welcome to Markets-Boats. The server is up and running!"
+//   });
+// });
 
 app.use("/api", router);
 
