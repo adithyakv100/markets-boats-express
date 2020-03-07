@@ -1,18 +1,8 @@
-var express = require('express');
-var port = process.env.PORT || 3000;
-var app = express();
+const { app } = require("./loaders");
 
-app.get('/', function(req, res) {
-  res.send({
-    "Output" : "Hello World!"
-  });
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server started on port ${port}!`);
 });
 
-app.post('/', function(req, res) {
-  res.send({
-    "Output" : "Hello World!"
-  });
-});
-
-app.listen(port);
 module.exports = app;
