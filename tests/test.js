@@ -8,6 +8,7 @@ const request = supertest(app);
 
 describe("Tests app", function() {
   it("verifies get", function(done) {
+    done(null);
     // request
     //   .get("/")
     //   .expect(200)
