@@ -7,6 +7,9 @@ files:
     destination: /home/ec2-user/express-service
   - source: /node_modules
     destination: /home/ec2-user/express-service/node_modules
+  - source: /src
+    destination: /home/ec2-user/express-service/src
+
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies

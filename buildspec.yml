@@ -35,3 +35,4 @@ artifacts:
     - scripts/*
     - node_modules/**/*
     - template-configuration.json
+    - src/**/*

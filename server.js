@@ -3,12 +3,12 @@ const path = require("path");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
 
-const { router } = require("./src/globalRouting");
-
-var port = process.env.PORT || 3000;
-
 const app = express();
 console.log("created an express app");
+
+const router = require("./src/globalRouting");
+
+var port = process.env.PORT || 3000;
 
 // app.use(logger("dev"));
 app.use(bodyParser.json());
