@@ -9,6 +9,8 @@ files:
     destination: /home/ec2-user/express-service/node_modules
   - source: /src
     destination: /home/ec2-user/express-service/src
+  - source: /knexfile.js
+    destination: /home/ec2-user/express-service
 
 hooks:
   AfterInstall:
