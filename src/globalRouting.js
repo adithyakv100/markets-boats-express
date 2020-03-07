@@ -1,12 +1,12 @@
-const { Router } = require("express");
+const express = require("express");
 
-const router = Router();
+const router = express.Router();
 
 //const userRouter = require("./apps/User/user.routes");
 
 //router.use("/auth", userRouter);
 
-router.get("/", function(req, res) {
+router.get("/", (req, res) => {
   res.send("abcd");
 });
 
